@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Ladder</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="snla.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h1 >Snake & Ladder</h1>
+        <div id="gameboard">
+            <div class="box" id="1" style="border-left: 20px solid; border-top: 10px solid; background-color: blueviolet;">100</div>
+            <div class="box" id="2" style="border-top: 10px solid;background-color:brown;">99</div>
+            <div class="box" id="3"style="border-top: 10px solid;background-color:white;">98</div>
+            <div class="box" id="4"style="border-top: 10px solid;background-color:red;">97</div>
+            <div class="box" id="5"style="border-top: 10px solid; solid;background-color: chartreuse;">96</div>
+            <div class="box" id="6"style="border-top: 10px solid;background-color:darkgreen;">95</div>
+            <div class="box" id="7"style="border-top: 10px solid;background-color:black;">94</div>
+            <div class="box" id="8"style="border-top: 10px solid;background-color:aqua; ">93</div>
+            <div class="box" id="9"style="border-top: 10px solid;background-color:chocolate;">92</div>
+            <div class="box" id="10" style="border-top: 10px solid;background-color:yellow;">91</div>
+            <div class="box" id="11" style="border-left: 20px solid;background-color: chartreuse;">81</div>
+            <div class="box" id="12" style="background-color:darkgreen;">82</div>
+            <div class="box" id="13"style="background-color:black;">83</div>
+            <div class="box" id="14"style="background-color:yellow;">84</div>
+            <div class="box" id="15"style="background-color:brown;">85</div>
+            <div class="box" id="16"style="background-color:red;">86</div>
+            <div class="box" id="17"style="background-color:white;">87</div>
+            <div class="box" id="18" style="background-color:chocolate;">88</div>
+            <div class="box" id="19"style="background-color:aqua;">89</div>
+            <div class="box" id="20"style="background-color:chocolate;">90</div>
+            <div class="box" id="21"style="border-left: 20px solid;background-color:red;">80</div>
+            <div class="box" id="22" style="background-color: chartreuse;">79</div>
+            <div class="box" id="23"style="background-color:aqua;">78</div>
+            <div class="box" id="24"style="background-color:black;">77</div>
+            <div class="box" id="25"style="background-color:white;">76</div>
+            <div class="box" id="26"style=" background-color: blueviolet;">75</div>
+            <div class="box" id="27"style="background-color:darkgreen;">74</div>
+            <div class="box" id="28"style="background-color:yellow;">73</div>
+            <div class="box" id="29"style="background-color:red;">72</div>
+            <div class="box" id="30"style="background-color:brown;">71</div>
+            <div class="box" id="31"style="border-left: 20px solid;background-color:yellow;">61</div>
+            <div class="box" id="32"style="background-color:red;">62</div>
+            <div class="box" id="33" style=" background-color: blueviolet;">63</div>
+            <div class="box" id="34"style="background-color:darkgreen;">64</div>
+            <div class="box" id="35"style="background-color:black;">65</div>
+            <div class="box" id="36"style="background-color:brown;">66</div>
+            <div class="box" id="37"style="background-color: chartreuse;">67</div>
+            <div class="box" id="38" style="background-color: black;">68</div>
+            <div class="box" id="39"style="background-color:white;">69</div>
+            <div class="box" id="40"style="background-color:white;">70</div>
+            <div class="box" id="41"style="border-left: 20px solid;background-color:white;">60</div>
+            <div class="box" id="42" style="background-color:black;">59</div>
+            <div class="box" id="43"style="background-color:yellow;">58</div>
+            <div class="box" id="44" style="background-color: chartreuse;">57</div>
+            <div class="box" id="45"style="background-color:chocolate;">56</div>
+            <div class="box" id="46"style="background-color:aqua;">55</div>
+            <div class="box" id="47"style="background-color:brown;">54</div>
+            <div class="box" id="48"style=" background-color: blueviolet;">53</div>
+            <div class="box" id="49"style="background-color:darkgreen;">52</div>
+            <div class="box" id="50"style="background-color:red;">51</div>
+            <div class="box" id="51"style="border-left: 20px solid;background-color:black;">41</div>
+            <div class="box" id="52" style="background-color:aqua; ">42</div>
+            <div class="box" id="53"style="background-color:red;">43</div>
+            <div class="box" id="54"style=" background-color: blueviolet;">44</div>
+            <div class="box" id="55"style="background-color:darkgreen;">45</div>
+            <div class="box" id="56"style="background-color:chocolate;">46</div>
+            <div class="box" id="57" style="background-color:yellow;">47</div>
+            <div class="box" id="58"style="background-color:white;">48</div>
+            <div class="box" id="59"style="background-color: chartreuse;">49</div>
+            <div class="box" id="60"style="background-color:yellow;">50</div>
+            <div class="box" id="61"style="border-left: 20px solid;background-color:aqua; ">40</div>
+            <div class="box" id="62"style="background-color:chocolate;">39</div>
+            <div class="box" id="63" style="background-color: chartreuse;">38</div>
+            <div class="box" id="64"style="background-color:chocolate;">37</div>
+            <div class="box" id="65"style="background-color:aqua;">36</div>
+            <div class="box" id="66"style="background-color:yellow;">35</div>
+            <div class="box" id="67"style="background-color:chocolate;">34</div>
+            <div class="box" id="68"style="background-color:brown;">33</div>
+            <div class="box" id="69"style=" background-color: blueviolet;">32</div>
+            <div class="box" id="70"style="background-color:darkgreen;">31</div>
+            <div class="box" id="71"style="border-left: 20px solid;background-color:brown;">21</div>
+            <div class="box" id="72"style=" background-color: blueviolet;">22</div>
+            <div class="box" id="73" style="background-color:darkgreen;">23</div>
+            <div class="box" id="74"style="background-color:aqua;">24</div>
+            <div class="box" id="75"style="background-color:yellow;">25</div>
+            <div class="box" id="76"style="background-color:white;">26</div>
+            <div class="box" id="77"style="background-color:aqua;">27</div>
+            <div class="box" id="78"style="background-color:red;">28</div>
+            <div class="box" id="79" style="background-color: black;">29</div>
+            <div class="box" id="80"style="background-color: chartreuse;">30</div>
+            <div class="box" id="81"style="border-left: 20px solid;background-color:chocolate;">20</div>
+            <div class="box" id="82" style="background-color:white;">19</div>
+            <div class="box" id="83"style="background-color:chocolate;">18</div>
+            <div class="box" id="84"style="background-color:brown;">17</div>
+            <div class="box" id="85"style="background-color:red;">16</div>
+            <div class="box" id="86"style="background-color: chartreuse;">15</div>
+            <div class="box" id="87"style=" background-color: blueviolet;">14</div>
+            <div class="box" id="88"style="background-color:darkgreen;">13</div>
+            <div class="box" id="89"style="background-color:yellow;">12</div>
+            <div class="box" id="90" style="background-color: black;">11</div>
+            <div class="box" id="91"style="border-left: 20px solid;background-color:darkgreen;></div>"> <br> 1<br> <b>start</b></div>
+            <div class="box" id="92"style="background-color:yellow;">2</div>
+            <div class="box" id="93"style="background-color:brown;">3</div>
+            <div class="box" id="94"style="background-color:white;">4</div>
+            <div class="box" id="95"style=" background-color: blueviolet;">5</div>
+            <div class="box" id="96"style="background-color:black;">6</div>
+            <div class="box" id="97"style="background-color:red;">7</div>
+            <div class="box" id="98"style="background-color: chartreuse;">8</div>
+            <div class="box" id="99"style="background-color:brown;">9</div>
+            <div class="box" id="100"style="background-color:aqua;">10</div>
+        </div>
+        <div class="btnDaise row">
+        <button class="btn btn-primary" onclick="rollDice()">Roll Dice</button>
+        <span id="dice-result">Dice Result: 0</span>
+        <button class="triangle-button"></button>
+        <button class="triangle-button"></button>
+        <button class="triangle-button"></button>
+        <button class="triangle-button"></button>
+    </div>
+    </div>
+    <script src="snla.js"></script>
+</body>
+</html>
